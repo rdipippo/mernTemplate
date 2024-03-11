@@ -8,7 +8,9 @@ RUN curl -sL https://deb.nodesource.com/setup_12.x | bash && \
     rm -f /etc/apt/sources.list.d/nodesource.list
 
 COPY . .
-WORKDIR server
+
 RUN npm install
-RUN BACKGROUND npm run start-local
-EXPOSE WEBSITE http://localhost:3001
+
+RUN BACKGROUND npm start
+
+EXPOSE WEBSITE http://localhost:3000

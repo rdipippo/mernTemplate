@@ -1,0 +1,5 @@
+FROM /Layerfile
+WORKDIR server
+RUN npm install
+RUN BACKGROUND npm run start-local
+EXPOSE WEBSITE http://localhost:3001
