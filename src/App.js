@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
 
-    axios.get("http://192.168.40.100:3001/api/health").then(response => {
+    axios.get("http://localhost:3001/api/health").then(response => {
       setStatus(response.data.status);
     });
   }, []);
