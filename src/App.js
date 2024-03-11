@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
 
-    axios.get("http://localhost:3001/api/health").then(response => {
+    axios.get("http://heretichusband.onwebapp.io/api/health").then(response => {
       setStatus(response.data.status);
     });
   }, []);
